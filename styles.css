@@ -12,3 +12,5 @@
 .origin-emblem span{font-family:Arial,Helvetica,sans-serif;font-size:clamp(58px,7vw,112px);font-weight:300;letter-spacing:-.055em;color:#f5f5f2}
 @media(max-width:900px){.cover-art{right:5vw;width:32vw;opacity:.42}}
 @media(max-width:650px){.cover-art{position:relative;right:auto;top:auto;transform:none;width:210px;margin:22px auto 8px}.cover-center{margin:auto 0 20px}.origin-emblem span{font-size:46px}}
+
+/* force pages rebuild 1790281401622 */
