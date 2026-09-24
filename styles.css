@@ -4,3 +4,4 @@
 /* Slightly smaller headings */
 .hero h1{font-size:clamp(50px,6.6vw,98px)}.page-hero h1{font-size:clamp(39px,4.6vw,68px)}.contact h1{font-size:clamp(44px,5.4vw,78px)}
 @media(max-width:520px){.cover{padding:5vh 7vw}.cover-center h1{font-size:44px}.hero h1{font-size:43px}.page-hero h1{font-size:38px}}
+/* deployment refresh */
