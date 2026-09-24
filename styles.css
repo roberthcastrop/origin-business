@@ -14,3 +14,5 @@
 @media(max-width:650px){.cover-art{position:relative;right:auto;top:auto;transform:none;width:210px;margin:22px auto 8px}.cover-center{margin:auto 0 20px}.origin-emblem span{font-size:46px}}
 
 /* force pages rebuild 1790281401622 */
+
+.cover-photo{padding:0;background-image:url("ChatGPT%20Image%20Sep%2024%2C%202026%2C%2004_45_18%20PM.png");background-position:center;background-size:cover;background-repeat:no-repeat;min-height:100vh;position:relative}.cover-click{position:absolute;inset:0;z-index:10;display:block}
