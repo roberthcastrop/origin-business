@@ -5,17 +5,43 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>ORIGIN | Business Launch</title>
 <style>
+*{box-sizing:border-box}
 html,body{margin:0;width:100%;height:100%;background:#050505}
 body{overflow:hidden}
-.hero{position:relative;width:100vw;height:100vh;height:100svh;background:#050505}
+.hero{position:relative;width:100vw;height:100vh;height:100svh;background:#050505;overflow:hidden}
 .hero img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-.hero a{position:absolute;inset:0;z-index:2}
-@media(max-width:850px){.hero img{object-position:center}}
+.hero a{position:absolute;inset:0;z-index:5}
+.mobile{display:none}
+@media(max-width:850px){
+  .desktop{display:none}
+  .mobile{display:flex;position:absolute;inset:0;flex-direction:column;padding:32px 24px 26px;color:#fff;background:
+    linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.36)),
+    url("origin-hero.png") 69% center/auto 100% no-repeat #050505}
+  .mobile:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.62) 48%,rgba(0,0,0,.12) 78%);z-index:0}
+  .m-logo,.m-copy,.m-foot{position:relative;z-index:2}
+  .m-logo{font:800 18px Arial,sans-serif;letter-spacing:.28em}
+  .m-copy{margin-top:22vh;max-width:340px}
+  .m-eye{font:10px Arial,sans-serif;letter-spacing:.27em;color:#c8c8c8;margin-bottom:22px}
+  .m-title{font:400 clamp(48px,15vw,68px)/.91 Georgia,serif;letter-spacing:-.045em;margin:0 0 20px}
+  .m-sub{font:400 20px/1.2 Georgia,serif;color:#d2d2d2;margin:0 0 38px}
+  .m-enter{display:inline-block;font:700 12px Arial,sans-serif;letter-spacing:.22em;border-bottom:1px solid #ddd;padding-bottom:9px}
+  .m-foot{margin-top:auto;border-top:1px solid rgba(255,255,255,.38);padding-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:11px;font:9px Arial,sans-serif;letter-spacing:.16em;color:#c7c7c7}
+}
 </style>
 </head>
 <body>
 <main class="hero">
-<img src="origin-hero.png" alt="ORIGIN Business Launch">
+<img class="desktop" src="origin-hero.png" alt="ORIGIN Business Launch">
+<div class="mobile">
+  <div class="m-logo">ORIGIN</div>
+  <div class="m-copy">
+    <div class="m-eye">BUSINESS LAUNCH</div>
+    <h1 class="m-title">Todo negocio<br>tiene un origen.</h1>
+    <p class="m-sub">Nosotros construimos el tuyo.</p>
+    <span class="m-enter">ENTRAR →</span>
+  </div>
+  <div class="m-foot"><span>ESTRATEGIA</span><span>IDENTIDAD</span><span>SISTEMAS</span><span>LANZAMIENTO</span></div>
+</div>
 <a href="home.html" aria-label="Entrar a ORIGIN"></a>
 </main>
 </body>
