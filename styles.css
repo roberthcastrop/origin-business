@@ -16,3 +16,26 @@
 /* force pages rebuild 1790281401622 */
 
 .cover-photo{padding:0;background-image:url("ChatGPT%20Image%20Sep%2024%2C%202026%2C%2004_45_18%20PM.png");background-position:center;background-size:cover;background-repeat:no-repeat;min-height:100vh;position:relative}.cover-click{position:absolute;inset:0;z-index:10;display:block}
+
+.mobile-menu-btn{display:none;background:none;border:0;margin:0;padding:10px;width:46px;height:46px;cursor:pointer}
+.mobile-menu-btn span{display:block;height:1px;background:#f5f5f2;margin:7px 0;width:26px}
+@media(max-width:850px){
+ .nav{height:72px;padding:0 6vw}
+ .mobile-menu-btn{display:block;position:relative;z-index:32}
+ .nav nav{display:none;position:fixed;inset:72px 0 auto 0;background:#050505;border-top:1px solid #222;border-bottom:1px solid #333;padding:20px 6vw 28px;flex-direction:column;align-items:stretch;gap:0;z-index:31}
+ .nav.open nav{display:flex}
+ .nav nav .menu{display:block;padding:0;border-bottom:1px solid #222}
+ .nav nav .menu>a,.nav nav>.nav-cta{display:block!important;padding:18px 0;font-size:13px;letter-spacing:.12em}
+ .nav nav>.nav-cta{border:0;border-bottom:1px solid #222}
+ .submenu{display:none}
+ .hero{min-height:calc(100svh - 72px);padding:9vh 7vw 4vh}
+}
+@media(max-width:520px){
+ .hero{min-height:calc(100svh - 72px);padding:8vh 7vw 4vh;justify-content:flex-start}
+ .hero h1{font-size:clamp(42px,12vw,54px);line-height:.96;margin:26px 0 30px;max-width:100%;overflow-wrap:normal}
+ .hero h1 em{display:block}
+ .lead{font-size:17px;line-height:1.55}
+ .actions{flex-direction:column;align-items:stretch;gap:18px}
+ .btn{display:block;text-align:left}
+ .hero-foot{margin-top:55px;display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
+}
