@@ -5,21 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>ORIGIN | Business Launch</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;background:#050505;color:#fff}body{font-family:Arial,Helvetica,sans-serif}
-.cover{position:relative;min-height:100svh;overflow:hidden;background:#050505 url("origin-hero.png?v=final-mobile") 72% center/auto 100% no-repeat;display:flex;flex-direction:column;padding:42px 28px 30px}
-.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.72) 46%,rgba(0,0,0,.12) 78%),linear-gradient(0deg,rgba(0,0,0,.72),transparent 35%);z-index:0}
-.top,.copy,.foot{position:relative;z-index:2}.top{display:flex;align-items:center;justify-content:space-between}.logo{font-size:20px;font-weight:800;letter-spacing:.28em}.menu{width:42px;height:42px;border:1px solid rgba(255,255,255,.65);display:grid;place-content:center;gap:6px}.menu i{display:block;width:23px;height:1px;background:#fff}
-.copy{margin-top:20vh;max-width:620px}.eyebrow{font-size:11px;letter-spacing:.28em;color:#bbb;margin-bottom:28px}.copy h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(47px,13vw,68px);line-height:.92;letter-spacing:-.04em;margin:0 0 20px}.sub{font-family:Georgia,serif;font-size:24px;color:#c7c7c7;margin:0 0 46px}.enter{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.22em;border-bottom:1px solid #ddd;padding-bottom:10px}.foot{margin-top:auto;padding-top:22px;border-top:1px solid rgba(255,255,255,.45);display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:9px;letter-spacing:.18em;color:#ccc}
-.full-link{position:absolute;inset:0;z-index:3}
-@media(min-width:851px){.cover{background-size:cover;background-position:center;padding:48px 5vw}.copy{margin-top:19vh}.copy h1{font-size:clamp(60px,6vw,94px);max-width:900px}.foot{display:flex;justify-content:space-between}}
+html,body{margin:0;width:100%;height:100%;background:#050505}
+body{overflow:hidden}
+.hero{position:relative;width:100vw;height:100vh;height:100svh;background:#050505}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.hero a{position:absolute;inset:0;z-index:2}
+@media(max-width:850px){.hero img{object-position:center}}
 </style>
 </head>
 <body>
-<main class="cover">
-<div class="top"><div class="logo">ORIGIN</div><div class="menu"><i></i><i></i><i></i></div></div>
-<div class="copy"><div class="eyebrow">BUSINESS LAUNCH</div><h1>Todo negocio<br>tiene un origen.</h1><p class="sub">Nosotros construimos el suyo.</p><span class="enter">ENTRAR →</span></div>
-<div class="foot"><span>ESTRATEGIA</span><span>IDENTIDAD</span><span>SISTEMAS</span><span>LANZAMIENTO</span></div>
-<a class="full-link" href="home.html" aria-label="Entrar a ORIGIN"></a>
+<main class="hero">
+<img src="origin-hero.png" alt="ORIGIN Business Launch">
+<a href="home.html" aria-label="Entrar a ORIGIN"></a>
 </main>
 </body>
 </html>
