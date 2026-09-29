@@ -28,7 +28,7 @@ html,body{margin:0;width:100%;height:100%;background:#050505}
 body{overflow:hidden}
 .hero{position:relative;width:100vw;height:100vh;height:100svh;background:#050505;overflow:hidden}
 .hero img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-.hero a{position:absolute;inset:0;z-index:5}
+.desktop-link{position:absolute;inset:0;z-index:5}\n.m-enter{color:inherit;text-decoration:none}
 .mobile{display:none}
 @media(max-width:850px){
   .desktop{display:none}
@@ -56,11 +56,11 @@ body{overflow:hidden}
     <div class="m-eye">BUSINESS LAUNCH</div>
     <h1 class="m-title">Todo negocio<br>tiene un origen.</h1>
     <p class="m-sub">Nosotros construimos el tuyo.</p>
-    <span class="m-enter">ENTRAR →</span>
+    <a class="m-enter" href="home.html">ENTRAR →</a>
   </div>
   <div class="m-foot"><span>ESTRATEGIA</span><span>IDENTIDAD</span><span>SISTEMAS</span><span>LANZAMIENTO</span></div>
 </div>
-<a href="home.html" aria-label="Entrar a ORIGIN"></a>
+<a class="desktop-link" href="home.html" aria-label="Entrar a ORIGIN Business Launch"></a>
 </main>
 </body>
 </html>
